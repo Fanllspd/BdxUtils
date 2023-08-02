@@ -44,7 +44,7 @@ class BDXReaderClass {
             //index += 4
             this.offset += 1;
             author = this.readString(index);
-            console.log(author);
+            //console.log(author);
             //console.log(bufferDecompressed.length);
             let flag = true;
             while (flag) {
@@ -1072,7 +1072,7 @@ class BDXReaderClass {
             throw new Error('Not a valid 2nd generation signature format');
         }
         let source = this.buf.subarray(0, this.offset - 1);
-        console.log(source);
+        //console.log(source);
         let sourceSignLen;
         if (this.buf[this.buf.length - 2] == 0xff) {
             sourceSignLen = this.buf.readUInt16LE(this.buf.length - 4);
