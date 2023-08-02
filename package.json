@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "sync-request": "^6.1.0",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5"
+  }
+}
